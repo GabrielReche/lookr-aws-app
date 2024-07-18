@@ -1,19 +1,19 @@
 # lookr - A Aws CLI
 
-# O `lookr` CLI é uma ferramenta que permite consultar informações sobre vários serviços da Amazon Web Services (AWS) em diferentes regiões. 
-# Ele utiliza o SDK oficial da AWS para Go para interagir com esses serviços e apresenta os resultados em formato tabular.
+O `lookr` CLI é uma ferramenta que permite consultar informações sobre vários serviços da Amazon Web Services (AWS) em diferentes regiões. 
+Ele utiliza o SDK oficial da AWS para Go para interagir com esses serviços e apresenta os resultados em formato tabular.
 
-## Installation
+## Instalação
 
-# Para instalar o `lookr` CLI, siga estes passos:
+Para instalar o `lookr` CLI, siga estes passos:
 
-# Certifique-se de ter o Go instalado em sua máquina. Caso contrário, você pode baixá-lo em https://golang.org/dl/
+Certifique-se de ter o Go instalado em sua máquina. Caso contrário, você pode baixá-lo em https://golang.org/dl/
 
-# Clone este repositório ou baixe o arquivo ZIP.
+Clone este repositório ou baixe o arquivo ZIP.
 
-# Navegue até o diretório CLI usando o terminal.
+Navegue até o diretório CLI usando o terminal.
 
-# Execute o seguinte comando para construir o CLI:
+Execute o seguinte comando para construir o CLI:
 
 ```bash
 
