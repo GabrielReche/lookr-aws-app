@@ -1,0 +1,36 @@
+# Este é um exemplo de arquivo .goreleaser.yml com algumas configurações padrão sensatas.
+# Certifique-se de verificar a documentação em https://goreleaser.com
+
+# Configuração dos builds
+builds:
+  # Definição de um único build para o binário "lookr"
+  - binary: lookr
+    # Variáveis de ambiente específicas para este build
+    env:
+      - CG0_ENABLED=0
+    # Sistemas operacionais suportados para o build
+    goos:
+      - linux
+      - darwin
+      - windows
+    # Arquiteturas suportadas para o build
+    goarch:
+      - amd64
+      - arm64
+      - arm
+    # Flags de linker utilizadas durante a compilação
+    ldflags: -s -w
+
+# Configuração dos checksums (arquivos de verificação)
+checksum:
+  # Nome do arquivo template para os checksums
+  name_template: "checksums.txt"
+
+# Configuração dos arquivos de distribuição (archives)
+archives:
+  # Definição do formato dos arquivos de distribuição
+  - format: binary
+    # Sobrescrita de formato específico para Windows (ZIP)
+    format_overrides:
+      - goos: windows
+        format: zip
